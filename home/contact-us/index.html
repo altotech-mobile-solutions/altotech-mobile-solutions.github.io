@@ -109,8 +109,12 @@ body.home li.menu-item a {
 	width: 100%;
 }
 body.home #main-header, body, body.home #canuck-footer, #main-header::after, #canuck-footer::after {
-		  background: url(/wp-content/uploads/2018/04/SunsetCell.jpg) no-repeat 75% fixed;
+	background: url(/wp-content/uploads/2018/04/SunsetCell.jpg) no-repeat;	
+	background-attachment: fixed;
+  background-position: 75%; 
 	background-size: cover;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
 }
 body.home #canuck-footer {
 	position: fixed;

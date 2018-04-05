@@ -90,41 +90,35 @@ body.home li.menu-item a {
 	bottom: 0;
 	height: 3%;
 }
-#fullwidth, #content-wrap, div.entry-content {
+#fullwidth, body.home #main-section, body.home .sticky-spacer {
 	background-color: transparent;
 }
-#main-section {
-	background-color: transparent;
-	position: static;
+#main-section, .sticky-spacer {
+	background-color: white;
+	opacity: 0.8;
+}
+.sticky-spacer {
+	margin-top: 0px;
+	line-height: 160px;
 }
 #copyright {
 	position: fixed;
 	bottom: 3px;
 }
-body.home {
-	  background: url(/wp-content/uploads/2018/04/SunsetCell.jpg) no-repeat 75% fixed;
-  background-size: cover;
-  height: 100%;
+.copyright_c1 {
+	width: 100%;
 }
-body.home #main-header {
+body.home #main-header, body, body.home #canuck-footer, #main-header::after, #canuck-footer::after {
 		  background: url(/wp-content/uploads/2018/04/SunsetCell.jpg) no-repeat 75% fixed;
 	background-size: cover;
 }
 body.home #canuck-footer {
-			  background: url(/wp-content/uploads/2018/04/SunsetCell.jpg) no-repeat 75% fixed;
-	background-size: cover;
 	position: fixed;
 	bottom: 0;
 	height: 3%;
 }
-body {
-	position: absolute;
-	height: 100%;
-}
-body::after, #main-header::after, #canuck-footer::after {
+#main-header::after, #canuck-footer::after {
   content: "";
-	  background: url(/wp-content/uploads/2018/04/SunsetCell.jpg) no-repeat 75% fixed;
-  background-size: cover;
 	opacity: 0.2;
 	height: 100%;
   top: 0;
@@ -134,6 +128,7 @@ body::after, #main-header::after, #canuck-footer::after {
   position: absolute;
   z-index: -1;   
 }
+
 
 
 

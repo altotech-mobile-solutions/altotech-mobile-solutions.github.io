@@ -3,11 +3,11 @@
 <head>
 <meta charset=UTF-8 >
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Terms and Conditions &#8211; Altotech Mobile Solutions</title>
+<title>Terms and Conditions</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Altotech Mobile Solutions &raquo; Feed" href="/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Altotech Mobile Solutions &raquo; Comments Feed" href="/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed" href="/comments/feed/" />
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/localhost\/ams\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.5"}};
 			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -69,8 +69,10 @@ footer .widget_recent_entries li,footer .widget_recent_entries li:last-child,foo
 <link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%2Fams%2Ftermsandconditions%2F&#038;format=xml" />
 		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 				<style id="canuck-custom-header-styles" type="text/css">
-					.header-image-overlay {
-				color: #ffffff;
+					.site-title,
+			.site-description {
+				position: absolute;
+				clip: rect(1px, 1px, 1px, 1px);
 			}
 				</style>
 		<link rel="icon" href="/wp-content/uploads/2018/04/ic_launcher-100x100.png" sizes="32x32" />
@@ -78,44 +80,118 @@ footer .widget_recent_entries li,footer .widget_recent_entries li:last-child,foo
 <link rel="apple-touch-icon-precomposed" href="/wp-content/uploads/2018/04/ic_launcher.png" />
 <meta name="msapplication-TileImage" content="http://localhost/ams/wp-content/uploads/2018/04/ic_launcher.png" />
 		<style type="text/css" id="wp-custom-css">
-			.fa-search {
+			.fa-search, .canuck-show-search-trigger, body.sticky .scrolltotop {
 	display: none;
 }
-body.home li.menu-item a {
+body.home li.menu-item a, body.home button.toggle-off {
 	color: #ffffff;
 }
 #canuck-footer {
-	background-color: white;
 	position: fixed;
 	bottom: 0;
 	height: 3%;
+	background-color: white;
 }
-#fullwidth, body.home #main-section, body.home .sticky-spacer {
+#fullwidth, #main-section, .sticky-spacer, body.home #main-header, body.home #canuck-footer {
 	background-color: transparent;
 }
-#main-section, .sticky-spacer {
-	background-color: white;
-	opacity: 0.8;
-}
-.sticky-spacer {
-	margin-top: 0px;
-	line-height: 160px;
-}
-#copyright {
+.copyright_c1 {
 	position: fixed;
 	bottom: 3px;
+	left: 15px;
 }
 .copyright_c1 {
 	width: 100%;
 }
-html,body.home #main-header, body, body.home #canuck-footer, #main-header::after, #canuck-footer::after {
-	background: url(/wp-content/uploads/2018/04/SunsetCell.jpg) no-repeat;	
-	background-color: transparent;
-	background-attachment: fixed;
-  background-position: 75%; 
+
+@media screen and (min-device-width: 768px) {
+body.home #main-header::after, body.home #canuck-footer::after {
+	  background: url(/wp-content/uploads/2018/04/SunsetCell.jpg) no-repeat 75%; 
 	background-size: cover;
+	background-attachment: fixed;
+	}
+#main-header::after, #canuck-footer::after {
+	  background: url(/wp-content/uploads/2018/04/SunsetCellFaded.png) no-repeat 75%; 
+	background-size: cover;
+	background-attachment: fixed;
+	content: "";
+	opacity: 1;
+	height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+}
+	body.sticky header.header-wide-no-feature div.header-logo-menu-strip {
+		background-color: transparent;
+	}
+
+@media screen and (max-device-width: 767px){
+	body.home #main-header {
+		background-color: #0853a0;
+	}
+	body.home #canuck-footer {
+		background-color: #f7af85;
+	}
+	#main-header {
+		background-color: #d0dfef;
+	}
+	#canuck-footer {
+		background-color: #f2ece8;
+	}
+}
+@media only screen and (max-width: 900px) {
+	body.sticky header.header-wide-no-feature div.header-logo-menu-strip {
+				background-color: #d0dfef;
+	}
+	body.home #main-menu-right ul li {
+	background-color: #0853a0;
+}
+body.home #main-menu-right ul li a {
+	color: #ffffff;
+}
+body.home #main-menu-right ul li a:hover {
+	color: #ED1651;
+}
+body.home #main-menu-right ul li.current-menu-item a {
+	color: #ED1651;
+}
+#main-menu-right ul li {
+	background-color: #d0dfef;
+}
+}
+body:before {
+  content: ""; 
+  display: block; 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%; 
+  z-index: -10; 
+	  background: url(/wp-content/uploads/2018/04/SunsetCellFaded.png) no-repeat 75% center; 
   -webkit-background-size: cover; 
   -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+}
+body.home:before {
+  content: ""; 
+  display: block; 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%; 
+  z-index: -10; 
+  background: url(/wp-content/uploads/2018/04/SunsetCell.jpg) no-repeat 75% center; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
 }
 body.home #canuck-footer {
 	position: fixed;
@@ -125,21 +201,62 @@ body.home #canuck-footer {
 .fill-height-fix {
 	height: 75vh;
 }
-#main-header::after, #canuck-footer::after {
-  content: "";
-	opacity: 0.2;
-	height: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
+#alan-pic {
+	max-width: 50%
 }
-
-
-
-
+body.home .header-image-left {
+	display: none;
+}
+.header-logo-menu-strip {
+	margin: 0;
+	padding: 0 30px 0 10px;
+}
+.header-logo-menu-strip .header-image-left a::before {
+	content: '';
+	width: 7vw;
+	min-width: 20px;
+	max-width: 200px;
+	height: 10px;
+	display: inline-block;
+}
+.header-logo-menu-strip .nav-container {
+	width: calc(100%-500px);
+}
+#content-wrap {
+	margin: 0;
+	padding: 10px;
+	max-width: 100vw;
+	display: inline-block
+}
+#fullwidth {
+	display: inline-block;
+}
+#fullwidth .page {
+	padding: 0px;
+	margin: 0 0;
+	width: 80vw;
+	max-width: 1100px;
+	display: inline-block;
+}
+@media only screen and (max-width: 900px) {
+	#content-wrap {
+		padding: 0;
+	}
+.header-wide-no-feature .header-logo-menu-strip .header-image-left, .header-wide-slider .header-logo-menu-strip .header-image-left, .header-wide-image .header-logo-menu-strip .header-image-left {
+	padding: 10px 0 10px 0;
+	}
+	.header-logo-menu-strip .header-image-left img {
+		margin: 10px 0 0 0;
+	}
+}
+#fullwidth::before{
+	content: '';
+	width: 7vw;
+	min-width: 20px;
+	max-width: 200px;
+	height: 1px;
+	display: inline-block;
+}
 		</style>
 	</head>
 <body class="page-template-default page page-id-120 wp-custom-logo">
@@ -148,15 +265,17 @@ body.home #canuck-footer {
 		<div class="header-logo-menu-strip">
 			<div class="header-image-left" >
 						<a href="/">
-			<img src="/wp-content/uploads/2018/04/ic_launcher.png" alt="logo">
+			<img src="/wp-content/uploads/2018/04/weblogoText.png" alt="logo">
 		</a>
 					</div>
 			<span class="canuck-show-search-trigger"><a href="#"><i class="fa fa-search"></i></a></span>
 							<button class="menu-1-toggle toggle-off" aria-expanded="false" aria-label="Top Menu Toggle"></button>
 						<nav class="nav-container">
 				<h2 class="screen-reader-text">Main Navigation</h2>
-				<div id="main-menu-right" class="main-nav"><ul id="main-menu-ul" class="main-menu"><li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="/my-front-page/">My Front Page</a></li>
+				<div id="main-menu-right" class="main-nav"><ul id="main-menu-ul" class="main-menu"><li id="menu-item-464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-464"><a href="/home/about/">About</a></li>
+<li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="/my-front-page/">My Front Page</a></li>
 <li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252"><a href="/home/contact-us/">Contact Us</a></li>
+<li id="menu-item-465" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-465"><a href="/">Home</a></li>
 </ul></div>			</nav>
 			<div class="canuck-search">
 				<form method="get" action="//">
